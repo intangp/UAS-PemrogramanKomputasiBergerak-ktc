@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/order.css">
+    <link rel="icon" href="assets/icon/logo.svg">
+    <title>OiKitchen</title>
+</head>
+<body>
+    <div class="order">
+        <legend>
+            <h1>Buat Pesanan</h1>
+        </legend>
+
+        <!-- Menu Item -->
+        <h2>Menu Item</h2>
+        <section class="menuContainer flex">
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/sateayam.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Sate Ayam</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/unstar.svg" alt="rate">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 10.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="add">
+                            </a>
+                            <a href="favorites.html">
+                                <img src="assets/icon/unlove.png" alt="fav">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menuCard">
+                <div class="menuImg">
+                    <div class="menuImgColor"><br></div>
+                    <img src="assets/img/spaghetti.jpg" alt="">
+                </div>
+                <div class="menuDesc">
+                    <h3 style="margin: 5px;">Spaghetti</h3>
+                    <!-- Rate -->
+                    <div class="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                        <img src="assets/icon/star.svg" alt="rate">
+                    </div>
+                    <div class="flex">
+                        <h3 id="price"><b>Rp 8.000,-</b></h3>
+                        <div class="add">
+                            <a href="order.html">
+                                <img src="assets/icon/add.svg" alt="add">
+                            </a>
+                            <a href="favorites.html">
+                                <img src="assets/icon/unlove.png" alt="fav">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <h6>TOTAL HARGA</h6>
+            <h5><b>Rp 18.000,-</b></h5>
+
+        <!-- Address -->
+        <h2>Detail Pesanan</h2>
+        <section id="costumerData">
+            <form action="">
+                <!-- Nama -->
+                <div class="flex">
+                    <p>Nama</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                
+                <!-- No. HP -->
+                <div class="flex">
+                    <p>No. Handphone</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                
+                <!-- Alamat -->
+                <p>Alamat</p>
+                <div class="flex">
+                    <p>Blok/Jalan</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="flex">
+                    <p>RT</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="flex">
+                    <p>RW</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="flex">
+                    <p>Kelurahan</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="flex">
+                    <p>Kecamatan</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="flex">
+                    <p>Kota</p>
+                    <span>:</span>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="flex">
+                    <p>Metode Pembayaran</p>
+                    <span>:</span>
+                    <div class="flex inputRadio">
+                        <input type="radio" name="payment" id="dana">
+                            <label for="dana">DANA</label>
+                        <input type="radio" name="payment" id="ovo">
+                            <label for="ovo">OVO</label>
+                        <input type="radio" name="payment" id="shopeepay">
+                            <label for="">ShopeePay</label>
+                        <input type="radio" name="payment" id="shopeepay">
+                            <label for="">GOPAY</label>
+                        <input type="radio" name="payment" id="shopeepay">
+                            <label for="">Transfer Bank</label>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p>Catatan</p>
+                    <span>:</span>
+                    <div class="flex">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <button type="submit" class="btnOrder">BUAT PESANAN</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #2E653E;
+    --secondary: #578A68;
+    --darker: #163E24;
+    --borderline: #ECECEC;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Login page style */
+
+.login {
+    display: flex;
+    max-height: 100vh;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+.loginImg {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+.loginImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.loginForm {
+    margin-bottom: auto;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.loginForm h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.brand {
+    font-weight: bold;
+    color: var(--darker);
+}
+
+.loginForm p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.autoLogin {
+    display: flex;
+    padding: 1%;
+    margin-top: -8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnAutoLogin {
+    display: flex;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 0 3px 2px var(--borderline);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btnAutoLogin img {
+    margin-right: 6px;
+}
+
+.login fieldset {
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+.login legend {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.login form {
+    margin-top: 5px;
+}
+
+.formInput {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    border-radius: 6px;
+    margin: 10px auto 20px;
+    background-color: var(--borderline);
+    border: 1px solid #c7c7c7;
+    transition: 0.2s;
+}
+
+.formInput img {
+    padding: 8px;
+    width: 26px;
+    height: 22px;
+}
+
+.formInput input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    height: 100%;
+    border-left: 1px solid #c7c7c7;
+}
+
+.formInput:hover {
+    box-shadow: 0 0 6px 2px #025cbc1e;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.btnLogin {
+    text-align: center;
+}
+
+.btnLogin button {
+    background-color: var(--darker);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    width: 25%;
+    margin-top: 10px;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.btnLogin button:hover, .btnAutoLogin:hover {
+    transform: scale(1.08);
+    background-color: var(--primary);
+    font-weight: bold;
+    color: white;
+}
+
+.loginLink {
+    text-align: center;
+}
+
+.login small a {
+    font-weight: bold;
+}
+
+
+
+/* ////////////////////////////////////////// */
+/* RESPONSIVE */
+/* ///////////////////////////////////////// */
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    .login {
+        flex-wrap: wrap;
+        padding-left: auto;
+    }
+    
+    .loginImg {
+        display: none;
+        width: 0;
+    }
+
+    .loginForm {
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .loginForm h1 {
+        font-size: 24px;
+    }
+    
+    .loginForm p {
+        font-size: 12px;
+    }
+    
+    .autoLogin {
+        flex-wrap: wrap;
+    }
+    
+    .btnAutoLogin {
+        width: 90%;
+        padding: 6px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .btnAutoLogin img {
+        transform: scale(0.8);
+    }
+    
+    .login legend {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 12px;
+    }
+    
+    .login form {
+        margin-top: 5px;
+    }
+    
+    .formInput {
+        width: 90%;
+        font-size: 12px;
+        height: 40px;
+        overflow-y: hidden; 
+    }
+    
+    .formInput img {
+        transform: scale(0.8);
+    }
+    
+    .formInput input {
+        width: 100%;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+    
+    .btnLogin button {
+        font-size: 12px;
+        padding: 10px 20px;
+        width: 40%;
+    }
+
+    .loginLink {
+        font-size: 12px;
+    }
+   
+}

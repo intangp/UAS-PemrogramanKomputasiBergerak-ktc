@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="icon" href="assets/icon/logo.svg">
+    <title>Registrasi</title>
+</head>
+<body>
+    <section class="login">
+        <img src="assets/img/melanie-lim.jpg" alt="food" class="loginImg">
+        <div class="loginForm">
+            <h1>Jelajahi Aneka Rasa di
+                <br>
+                <span class="brand">OiKitchen</span>
+            </h1>
+            <!-- Sign up automatically -->
+            <div class="autoLogin">
+                <a href="" class="btnAutoLogin">
+                    <img src="assets/icon/google.svg" alt="google">
+                    Registrasi dengan Google
+                </a>
+                <a href="" class="btnAutoLogin">
+                    <img src="assets/icon/fb.svg" alt="facebook">
+                    Registrasi dengan Facebook
+                </a>
+            </div>
+
+            
+            <fieldset>
+                <legend>ATAU</legend>
+            </fieldset>
+
+            <!-- Sign up Manually -->
+            <form action="login.html">
+                <!-- Input Phone Number -->
+                <div class="formInput">
+                    <img src="assets/icon/phone.png" alt="phone">
+                    <input type="text" placeholder="No. handphone" required>
+                </div>
+                <div class="formInput">
+                    <img src="assets/icon/user.png" alt="user">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                
+                <!-- Input Password -->
+                <div class="formInput">
+                    <img src="assets/icon/password.svg" alt="password">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="formInput">
+                    <img src="assets/icon/confirm.png" alt="password">
+                    <input type="password"  name="confirmPwd" id="confirmPwd" placeholder="Konfirmasi password" required>
+                </div>
+                <div class="btnLogin">
+                    <button type="submit" class="btnLogin">
+                        Registrasi
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
